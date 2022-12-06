@@ -33,7 +33,7 @@ export default function Tienda({guitarras}) {
 
 
 // export async function getStaticProps(){
-//     const respuesta = await fetch(`${process.env.API_URL}/guitars?populate=imagen`)
+//     const respuesta = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/guitars?populate=imagen`)
 //     const {data: guitarras} = await respuesta.json()
 
 // console.log(guitarras)
@@ -46,7 +46,7 @@ export default function Tienda({guitarras}) {
 // }
 
 export async function getServerSideProps(){
-    const respuesta = await fetch(`${process.env.API_URL}/guitars?populate=imagen`)
+    const respuesta = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/guitars?populate=imagen`)
     const {data: guitarras} = await respuesta.json()
 
 console.log(guitarras)

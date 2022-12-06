@@ -91,7 +91,7 @@ className={styles.formulario}>
 
 
 export async function getServerSideProps({query: {url}}) {
-const respuesta = await fetch(`${process.env.API_URL}/guitars?filters[url]=${url}&populate=imagen`)
+const respuesta = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/guitars?filters[url]=${url}&populate=imagen`)
 const {data : guitarra} = await respuesta.json()
 
 

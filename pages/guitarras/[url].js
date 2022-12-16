@@ -62,7 +62,7 @@ className={styles.formulario}>
     <label htmlFor="cantidad">Cantidad:</label>
         
         <select
-        onChange={e => setCantidad(+e.target.value) }
+        onChange={e => setCantidad(e.target.value) }
         id="cantidad">
           <option value="0">-- Seleccione --</option>
           <option value="1">1</option>

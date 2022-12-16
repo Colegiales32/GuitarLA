@@ -10,7 +10,6 @@ export default function Layout ({children,title = '',description = ''}) {
         <Head>
             <title>{`GuitarLA- ${title}`}</title>
         <meta name='descripition' content={description}/>
-        <link rel="icon" href="/public/img/electric-guitar.png" />
         </Head>
         <Header/>
 
